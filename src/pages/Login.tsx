@@ -37,7 +37,7 @@ const Login = () => {
     navigate("/dashboard");
   };
   return (
-    <div className="flex flex-col items-center h-screen justify-center bg-linear-to-b from-teal-600 from-50% to-gray-600 to-50% space-y-6">
+    <div className="flex flex-col items-center h-screen justify-center bg-linear-to-b from-black from-50% to-gray-700 to-50% space-y-6">
       <img className="w-30" src={logo} alt="logo" />
       <h2 className="text-3xl text-white">EduPlus</h2>
       <div className="border shadow p-6 w-80 bg-white">

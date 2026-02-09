@@ -1,7 +1,9 @@
+import StudentDashboard from "../components/layout/student_dashboard/StudentDashboard";
+
 const Dashboard = () => {
   return (
     <>
-      <h1 className="text-2xl font-bold">Dashboard</h1>
+      <StudentDashboard />
     </>
   );
 };

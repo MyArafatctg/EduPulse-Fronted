@@ -5,7 +5,7 @@ import { RiArrowLeftSLine } from "react-icons/ri";
 import { PiSignOut } from "react-icons/pi";
 import cookie from "js-cookie";
 
-import Logo from "./logo.png";
+import Logo from "../assets/logo.png";
 // import staticMmenu from "../../assets/menuModel.json";
 import type { AppMenuItem } from "./menu";
 import SidebarMenuItem from "./SidebarMenuItem";
@@ -23,7 +23,8 @@ const Sidebar: React.FC<SidebarProps> = ({ children }) => {
   const menuList: AppMenuItem[] = (() => {
     try {
       return dynamicMenu ? (JSON.parse(dynamicMenu) as AppMenuItem[]) : [];
-    } catch {
+    } catch (error) {
+      console.error("Error parsing dynamic menu:", error);
       return [];
     }
   })();
@@ -31,17 +32,15 @@ const Sidebar: React.FC<SidebarProps> = ({ children }) => {
   const signOut = () => {
     localStorage.removeItem("token");
     cookie.remove("token");
-    // navigate("/login");
-    window.location.href = "https://andron.ahlapps.com/";
-    return null;
+    navigate("/login");
   };
 
   return (
-    <div className="flex max-h-screen bg-gray-100">
+    <div className="flex max-h-screen bg-gray-700">
       {/* Sidebar Section */}
       <div
         className={`flex flex-col h-screen ${
-          isCollapse ? "w-[70px]" : "w-64"
+          isCollapse ? "w-17.5" : "w-64"
         } bg-[#151a2d] shadow-xl border p-3 transition-all duration-300 ease-in-out`}
       >
         {/* Logo and Collapse Button */}
@@ -53,7 +52,7 @@ const Sidebar: React.FC<SidebarProps> = ({ children }) => {
           <img src={Logo} alt="logo" className="h-12 rounded-full" />
 
           {!isCollapse && (
-            <span className="text-white text-xl font-bold">Apex RPA</span>
+            <span className="text-white text-xl font-bold">EduPlus</span>
           )}
 
           <button

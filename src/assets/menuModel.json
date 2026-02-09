@@ -1,102 +1,118 @@
  [
       
-        {
+    {
             "link": "/dashboard",
-            "childIcon": "N/A",
+            "parentIcon": "dashboard",
             "title": "Dashboard"
+    },
+    {
+            "link": "/profile",
+            "parentIcon": "profile",
+            "title": "Profile"
     },{
       "subMenus": [
-         {
-             "subMenus": [
-              {
-                "link": "/einvoicing-handm",
-                "childIcon": "N/A",
-                "title": "H&M"
-              },
-              {
-                "link": "/invoice-download",
-                "childIcon": "N/A",
-                "title": "H&M Invoice Download"
-              }
+          {
+            "link": "/add-student",
+            "childIcon": "N/A",
+            "title": "Add Student"
+          },
+          {
+            "link": "/student-list",
+            "childIcon": "N/A",
+            "title": "Student List"
+          }
         ],
-        "parentIcon": "FaRegArrowAltCircleRight",
-        "title": "E-Invoicing"
-        },
-          {
-            "link": "/fcr-submission",
-            "childIcon": "N/A",
-            "title": "FCR Submission"
-          },
-          {
-            "link": "/edoc-upload-handm",
-            "childIcon": "N/A",
-            "title": "E-DOC Upload"
-          },
-          {
-            "link": "/exp-duplication",
-            "childIcon": "N/A",
-            "title": "EXP Duplication"
-          },
-          {
-            "link": "/exp-download",
-            "childIcon": "N/A",
-            "title": "EXP Download"
-          },
-          {
-            "link": "/container-tracking",
-            "childIcon": "N/A",
-            "title": "Container Tracking"
-          },
-          {
-            "link": "/under-development",
-            "childIcon": "N/A",
-            "title": "REX Issuance"
-          },
-          {
-            "link": "/under-development", 
-            "childIcon": "N/A",
-            "title": "CO/GSA/SAFTA"
-          },
-          {
-             "subMenus": [
-             {
-                "link": "/payment-advice-handm",
-                "childIcon": "N/A",
-                "title": "Payment Advice (H&M)"
-            }
-        ],
-        "parentIcon": "FaRegArrowAltCircleRight",
-        "title": "Data Processing"
-        }
-        ],
-        "parentIcon": "FaArrowAltCircleUp",
-        "title": "Export"
+        "parentIcon": "student",
+        "title": "Students"
       },
       {
       "subMenus": [
           {
-             "subMenus": [
-             {
-                "link": "/lc_dashboard",
-                "childIcon": "N/A",
-                "title": "Dashboard"
-            },
-            {
-                "link": "/lc_list",
-                "childIcon": "N/A",
-                "title": "Details"
-            }
-        ],
-        "parentIcon": "FaRegArrowAltCircleRight",
-        "title": "LC"
-        },
-        {
-            "link": "/hsbc-trade",
+            "link": "/add-teacher",
             "childIcon": "N/A",
-            "title": "HSBC Trade Solution"
-        }
+            "title": "Add Teacher"
+          },
+          {
+            "link": "/teacher-list",
+            "childIcon": "N/A",
+            "title": "Teacher List"
+          }
         ],
-        "parentIcon": "FaArrowAltCircleDown",
-        "title": "Import"
+        "parentIcon": "teacher",
+        "title": "Teacher"
+      },
+      {
+      "subMenus": [
+          {
+            "link": "/add-department",
+            "childIcon": "N/A",
+            "title": "Add Department"
+          },
+          {
+            "link": "/department-list",
+            "childIcon": "N/A",
+            "title": "Department List"
+          }
+        ],
+        "parentIcon": "department",
+        "title": "Departments"
+      },
+      {
+      "subMenus": [
+          {
+            "link": "/add-course",
+            "childIcon": "N/A",
+            "title": "Add Course"
+          },
+          {
+            "link": "/course-list",
+            "childIcon": "N/A",
+            "title": "Course List"
+          }
+        ],
+        "parentIcon": "book",
+        "title": "Courses"
+      },
+      {
+      "subMenus": [
+          {
+            "link": "/enroll-student",
+            "childIcon": "N/A",
+            "title": "Enroll Student"
+          },
+          {
+            "link": "/enrollment-list",
+            "childIcon": "N/A",
+            "title": "Enrollment List"
+          }
+        ],
+        "parentIcon": "enroll",
+        "title": "Enrollment"
+      },
+      {
+      "subMenus": [
+          {
+            "link": "/enter-marks",
+            "childIcon": "N/A",
+            "title": "Enter Marks"
+          },
+          {
+            "link": "/result-sheet",
+            "childIcon": "N/A",
+            "title": "Result Sheet"
+          },
+          {
+            "link": "/gpa-report",
+            "childIcon": "N/A",
+            "title": "GPA Report"
+          },
+          {
+            "link": "/transcript",
+            "childIcon": "N/A",
+            "title": "Transcript"
+          }
+        ],
+        "parentIcon": "result",
+        "title": "Results"
       }
     ]

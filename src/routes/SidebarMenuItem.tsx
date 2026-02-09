@@ -22,6 +22,7 @@ const SidebarMenuItem: React.FC<MenuItemProps> = ({
       setOpen(false);
     }
   }, [isCollapse]);
+  console.log("Rendering SidebarMenuItem with item:", item);
   return (
     <div>
       {hasChildren ? (
@@ -50,7 +51,7 @@ const SidebarMenuItem: React.FC<MenuItemProps> = ({
             }`
           }
         >
-          {IconMap[item.parentIcon]}
+          {IconMap[item.childIcon]}
           {!isCollapse && <span>{item.title}</span>}
         </NavLink>
       )}

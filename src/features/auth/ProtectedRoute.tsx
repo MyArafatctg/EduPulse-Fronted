@@ -6,7 +6,7 @@ import { useLocation } from "react-router-dom";
 import menuModel from "../../assets/menuModel.json";
 import { extractPermittedPaths, type AppMenuItem } from "../../routes/menu";
 import UnauthorizedPage from "../../pages/UnauthorizedPage";
-import { Sidebar } from "lucide-react";
+import Sidebar from "../../routes/Sidebar";
 
 const ProtectedRoute = () => {
   const { token, authLoading } = useContext(AppContext);
@@ -15,9 +15,9 @@ const ProtectedRoute = () => {
 
   // const permittedMenuString = localStorage.getItem("menuDetails");
 
-  const permittedMenu: AppMenuItem[] = menuModel
-    ? JSON.parse(menuModel as unknown as string)
-    : [];
+  // const permittedMenu: AppMenuItem[] = menuModel
+  //   ? JSON.parse(menuModel as unknown as string)
+  //   : [];
 
   const basePath = location.pathname.split("/")[1] || "";
   const permittedPaths = extractPermittedPaths(menuModel);
